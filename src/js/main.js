@@ -15,7 +15,8 @@ $(function () {
         document.title = message;
     });
 });
-
+// 
+new SimpleBar($('.sec3')[0]);
 // $('.fs').click(function(){
 //     $('.fs-pressed').show();
 //     $('.vu-pressed').hide();
