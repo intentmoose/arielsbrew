@@ -16,7 +16,16 @@ $(function () {
     });
 });
 // 
-new SimpleBar($('.sec3')[0]);
+onResize = function() {
+    if($(window).width() > 780) {
+        new SimpleBar($('.sec3')[0], { autoHide: false });
+    }
+}
+
+$(document).ready(onResize);
+$(window).resize(onResize);
+// new SimpleBar($('.cds')[1], { autoHide: false });
+// new SimpleBar($('.tech')[1], { autoHide: false });
 // $('.fs').click(function(){
 //     $('.fs-pressed').show();
 //     $('.vu-pressed').hide();
